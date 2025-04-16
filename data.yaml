@@ -1,0 +1,14 @@
+# Путь к корневой папке датасета (относительно data.yaml или абсолютный)
+path: C:/Users/PinguinK/Desktop/ml/datasets
+train: images/train # Путь к папке с обучающими изображениями относительно 'path'
+val: images/val # Путь к папке с валидационными изображениями относительно 'path'
+# test: images/test # Опционально, если есть тестовая выборка
+
+# Параметры для Pose модели
+kpt_shape: [17, 3] # 17 точек, 3 значения (x, y, visibility)
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+# Классы
+names:
+  0: standing person
+  1: fall person
